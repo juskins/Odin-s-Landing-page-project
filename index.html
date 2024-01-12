@@ -5,6 +5,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Landing page project</title>
      <link rel="stylesheet" href="./css/styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
      <div class="container">
@@ -19,6 +22,11 @@
                          <li>Features</li>
                     </ul>
                     <button>Contact me</button>
+                    <div class="menu-toggle" id="mobile-menu">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                    </div>
                </nav>
 
                <div class="hero">
@@ -41,22 +49,22 @@
                <div class="impacts-container">
                     <div class="impact-box">
                          <img src="./images/forest.jpg" alt="">
-                         <h4>Biodiversity Loss</h4>
+                         <p>Biodiversity Loss</p>
                     </div>
 
                     <div class="impact-box">
                          <img src="./images/forest.jpg" alt="">
-                         <h4>Climate Change Impact</h4>
+                         <p>Climate Change Impact</p>
                     </div>
 
                     <div class="impact-box">
                          <img src="./images/forest.jpg" alt="">
-                         <h4>Water Cycle Disruption</h4>
+                         <p>Water Cycle Disruption</p>
                     </div>
 
                     <div class="impact-box">
                          <img src="./images/forest.jpg" alt="">
-                         <h4>Economic Consequences</h4>
+                         <p>Economic Consequences</p>
                     </div>
                </div>
           </section>
@@ -81,5 +89,11 @@
                copyright &#169; The Odin Project 2021
           </footer>
      </div>
+     <script>
+          document.getElementById('mobile-menu').addEventListener('click',function(){
+               let navList = document.querySelector('.menus');
+               navList.classList.toggle('show');
+          })
+     </script>
 </body>
 </html>
