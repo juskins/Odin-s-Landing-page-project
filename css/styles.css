@@ -47,6 +47,8 @@ button{
 button:hover{
      border: 2px solid #fff;
      background-color: inherit;
+     border-top-right-radius: 30px;
+
 }
 
 .logo img{
